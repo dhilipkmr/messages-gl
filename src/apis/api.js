@@ -1,11 +1,7 @@
 const MESSAGE_LIMIT = 10;
 
 function getAPI(url) {
-  return fetch(url).then(resp => {
-    return resp.json();
-  }).catch((err) => {
-    throw new Error(err);
-  })
+  return fetch(url).then(resp => resp.json());
 }
 
 export function getNextMessagesList({ limit = MESSAGE_LIMIT, pageToken = "" }) {
