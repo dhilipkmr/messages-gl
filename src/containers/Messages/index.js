@@ -122,7 +122,7 @@ function Messages() {
             const { content = "", displayTime = "", id = "", author = {}, height = "auto", hideClass = ''} = msg;
             const { name = "", photoUrl = "" } = author;
             return (
-              <li className={'callOut ' + hideClass} ref={elementPosition === index ? $thresholdElement : null} style={{ height: height }}>
+              <li key={id} className={'callOut ' + hideClass} ref={elementPosition === index ? $thresholdElement : null} style={{ height: height }}>
                 <Swipeable onSwipedLeft={(e) => handleSwipe(e, index)} onSwipedRight={(e) => handleSwipe(e, index, true)} {...config} key={id}>
                   <section className="contactInfo">
                     <div className="avatarWrapper dib">
