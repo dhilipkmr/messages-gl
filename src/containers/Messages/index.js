@@ -126,7 +126,7 @@ function Messages() {
                 <Swipeable onSwipedLeft={(e) => handleSwipe(e, index)} onSwipedRight={(e) => handleSwipe(e, index, true)} {...config} key={id}>
                   <section className="contactInfo">
                     <div className="avatarWrapper dib">
-                      <img loading="lazy" className="contactAvatar" src={photoUrl} alt={name + "_avatar"}/>
+                      <img loading="lazy" className="contactAvatar" src={photoUrl} height="35px" width="35px" alt={name + "_avatar"}/>
                     </div>
                     <div className="dib">
                       <div className="bold name" aria-label="contact-name" title={name}>
