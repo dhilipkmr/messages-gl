@@ -2,7 +2,6 @@ const MESSAGE_LIMIT = 10;
 
 function getAPI(url) {
   return fetch(url).then(resp => {
-    debugger;
     return resp.json();
   }).catch((err) => {
     throw new Error(err);
