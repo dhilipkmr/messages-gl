@@ -1,0 +1,37 @@
+.msgHeader {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 5px;
+  color: white;
+  background-color: #673ab6;
+  height: 50px;
+}
+
+.msgHeader .msgHeaderItems {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 5px;
+  margin-left: 5px;
+  
+}
+
+.msgHeader .msgHeaderItems .menu {
+  height: 1.8em;
+  width: 1.8em;
+}
+
+.msgHeader .msgHeaderItems .msgTxt {
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0 27px;
+}
+
+.messagesThreadWrapper {
+  position: relative;
+  top: 50px;
+  overflow: hidden;
+}

@@ -1,0 +1,39 @@
+.shimmerMessageInfo {
+  height: 80px;
+  
+}
+.shimmer .contactInfo {
+  height: 40px;
+}
+.shimmer .shimmerAvatar {
+  height: 35px;
+  width: 35px;
+  margin-right: 15px;
+  border-radius: 50% !important;
+}
+.shimmer .shimmerName {
+  width: 200px;
+  height: 20px;
+  margin-bottom: 5px;
+}
+.shimmer .shimmerTime {
+  width: 130px;
+  height: 15px;
+}
+
+.shimmer .shimmerAnimation {
+  background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+  animation : shimmer 500ms infinite;
+  background-size: 1000px 100%;
+  border-radius: 7px;
+}
+
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}

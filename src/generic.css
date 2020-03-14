@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #eeeeee;
+  margin: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.marginL10 {
+  margin-left: 10px;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.noDisplay {
+  display: none;
+}
+
+.ellipsisLine4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
