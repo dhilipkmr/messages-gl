@@ -61,7 +61,7 @@ function Messages() {
   };
 
   const handleSwipe = (e, index, isRight) => {
-    if (e.absY < 50) {
+    if (e.absY < 150) {
       const classToBeAdded = isRight ? "hideRight": "hideLeft";
       const visibileItems = [...messageList];
       visibileItems[index].hideClass = classToBeAdded;
@@ -91,7 +91,7 @@ function Messages() {
       // Height calculation is required to create height based transition when items are reomoved from the DOM
       let hasNewHeight = false;
       const updatedList = messageList.map((msg, index) => {
-        if (!msg.height) {
+        if (isNaN(msg.height)) {
           msg.height = $calloutWrap.current.children[index].offsetHeight;
           hasNewHeight = true;
         }
